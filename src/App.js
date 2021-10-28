@@ -18,7 +18,9 @@ function Main() {
     <>
       <div className="notBG">
         <Header />
-        <Home />
+        <div className="homeComponent">
+          <Home />
+        </div>
         <Footer />
       </div>
     </>
