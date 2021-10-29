@@ -3,6 +3,7 @@ import Background from "./components/Background";
 import Home from "./components/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Project from "./components/Project";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function Main() {
       <div className="notBG">
         <Header />
         <div className="homeComponent">
-          <Home />
+          {/* <Home /> */}
+          <Project />
         </div>
         <Footer />
       </div>

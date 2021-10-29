@@ -14,6 +14,6 @@ export default Header;
 const Container = styled.div`
   font-family: "News Cycle", sans-serif;
   text-align: center;
-  font-size: 20px;
+  font-size: 12px;
   letter-spacing: 3px;
 `;

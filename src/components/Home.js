@@ -56,17 +56,29 @@ function Home() {
 export default Home;
 
 const Container = styled.div`
-  background-color: whitesmoke;
-  color: black;
+  color: white;
   min-height: 75vh;
   border-radius: 75px;
   display: flex;
-  align-items: center;
-  opacity: 0.8;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  &:after {
+    border-radius: 75px;
+    background-color: black;
+    content: "";
+    min-height: 75vh;
+    opacity: 0.5;
+  }
 `;
 
 const Wrapper = styled.div`
-  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,8 +109,9 @@ const IconsDiv = styled.div`
   width: 100%;
   justify-content: space-around;
   padding: 10px;
+  color: white;
   a:visited {
-    color: black;
+    color: white;
   }
   .iconsCss {
     cursor: pointer;
