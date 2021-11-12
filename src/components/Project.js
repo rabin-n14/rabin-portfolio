@@ -217,8 +217,9 @@ const FadedBox = styled.div`
     box-shadow: 0px 5px 21px 1px rgba(119, 119, 119, 0.88);
     .vrLine {
       opacity: 1;
-      transition-duration: 0.5s;
+      transition-duration: 0.6s;
       transform: translateY(0);
+      height: 95%;
     }
     .boxSides {
       opacity: 1;
@@ -232,12 +233,12 @@ const FadedBox = styled.div`
   justify-content: space-around;
   .vrLine {
     border: 1px solid #fff;
-    height: 95%;
+    height: 5%;
     position: absolute;
     left: 50%;
     margin-left: 4px;
     top: 5px;
-    transform: translateY(-60px);
+    transform: translateY(-5px);
     opacity: 0.2;
     transition: 0.25s;
   }
@@ -252,7 +253,7 @@ const FadedBox = styled.div`
     font-size: 30px;
     &:hover {
       transition-duration: 0.25s;
-      font-size: 40px;
+      transform: scale(1.25);
       cursor: pointer;
     }
   }
