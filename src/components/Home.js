@@ -119,7 +119,7 @@ const IconsDiv = styled.div`
     transition: all 250ms cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
     &:hover {
       transform: scale(1.5);
-      box-shadow: 0px 19px 17px -8px #000000;
+      filter: drop-shadow(19px 17px 8px #000000);
     }
   }
 `;

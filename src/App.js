@@ -20,8 +20,8 @@ function Main() {
       <div className="notBG">
         <Header />
         <div className="homeComponent">
-          {/* <Home /> */}
-          <Project />
+          <Home />
+          {/* <Project /> */}
         </div>
         <Footer />
       </div>
