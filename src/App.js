@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Project from "./components/Project";
+import Work from "./components/Work";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function Main() {
         <Header />
         <div className="homeComponent">
           {/* <Home /> */}
-          <Project />
+          {/* <Project /> */}
+          <Work />
         </div>
         <Footer />
       </div>
