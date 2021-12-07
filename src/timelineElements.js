@@ -4,8 +4,7 @@ let timelineElements = [
     title: "Front-End Web Developer Intern",
     org: "Reesby Recruitment",
     description:
-      "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
-    buttonText: "View Frontend Projects",
+      "Working hand-in-hand with senior engineers to build CRM project. Determining the design and structures of web pages and ensuring that UX/UI are functioning properly.",
     date: "Jan 2021 - July 2021",
     icon: "work",
   },
@@ -14,8 +13,7 @@ let timelineElements = [
     title: "Bachelors of Information Technology",
     org: "Kent Institute Australia",
     description:
-      "Working hand-in-hand with front-end developers by providing the outward facing web application elements server-side logic. Creating the logic to make the web app function properly, and accomplishing this through the use of server-side scripting languages.",
-    buttonText: "View Backend Projects",
+      "Achieved Distinction in Units: Capstone Project A&B (Developed Full-Stack Project), Object-Oriented Design and Programming, Web Page Development and Project Management.",
     date: "Nov 2018 - Feb 2021",
     icon: "school",
   },
@@ -24,18 +22,16 @@ let timelineElements = [
     title: "IT Support Level-1",
     org: "Epping Plaza Hotel",
     description:
-      "Assessing the quality of specifications and technical design documents in order to ensure timely, relevant and meaningful feedback.",
-    buttonText: "Company Website",
+      "Performing administrative duties, data entry & responding emails and assisting in providing technical assistance to setup workstations for managers, supervisors and accountants.",
     date: "Feb 2018 - Present",
     icon: "work",
   },
   {
     id: 4,
     title: "Diploma of Information Technology",
-    org: "LaTrobe University",
+    org: "La Trobe University",
     description:
-      "Online Course in Magical Beasts and Wonders of the World - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-    buttonText: "Course Certificate",
+      "Achieved Distinction in Units: Databased Critical Thinking, Fundamentals of IT and Programming Environment.",
     date: "Feb 2018 - Oct 2018",
     icon: "school",
   },
