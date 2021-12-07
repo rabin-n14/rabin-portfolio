@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Project from "./components/Project";
-import Work from "./components/Work";
+import CareerTimeLine from "./components/CareerTimeLine";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function Main() {
         <div className="homeComponent">
           {/* <Home /> */}
           {/* <Project /> */}
-          <Work />
+          <CareerTimeLine />
         </div>
         <Footer />
       </div>

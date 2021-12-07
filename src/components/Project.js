@@ -16,7 +16,7 @@ function Project() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 9000,
     pauseOnFocus: true,
   };
 
@@ -31,7 +31,9 @@ function Project() {
               </SlideHeading>
               <SlideImgDes>
                 <SlideImage>
-                  <img src="/images/tesla-clone.png" alt="Tesla-Clone-Img" />
+                  <video autoPlay loop playsInLine muted>
+                    <source src="/videos/tesla_vid.mp4" type="video/mp4" />
+                  </video>
                   <FadedBox>
                     <a
                       href="https://rabin-tesla-clone-2021.netlify.app/"
@@ -75,7 +77,9 @@ function Project() {
               </SlideHeading>
               <SlideImgDes>
                 <SlideImage>
-                  <img src="/images/disney-clone.png" alt="Disney-Clone-Img" />
+                  <video autoPlay loop playsInLine muted>
+                    <source src="/videos/disney_vid.mp4" type="video/mp4" />
+                  </video>
                   <FadedBox>
                     <a
                       href="https://disneyplus-clone-rabin.firebaseapp.com"
@@ -184,7 +188,7 @@ const SlideImgDes = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 `;
 
 const SlideImage = styled.div`
@@ -193,7 +197,7 @@ const SlideImage = styled.div`
   position: relative;
   display: inline-block;
 
-  img {
+  video {
     width: 100%;
     height: 100%;
     object-fit: contain;

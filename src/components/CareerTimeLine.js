@@ -10,7 +10,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import Zoom from "react-reveal/Zoom";
 
-function Work() {
+function CareerTimeLine() {
   let workIconStyles = { background: "#06D6A0" };
   let schoolIconStyles = { background: "#f9c74f" };
   return (
@@ -56,7 +56,7 @@ function Work() {
   );
 }
 
-export default Work;
+export default CareerTimeLine;
 
 const Container = styled.div`
   color: white;
