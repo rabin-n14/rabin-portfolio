@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Shake from "react-reveal/Shake";
 
 function Contact() {
   return (
@@ -11,7 +12,10 @@ function Contact() {
           <Box>
             <div className="box">Error!</div>
             <p>
-              Please reach out to Rabin to fix this blunder:
+              <Shake delay={1500}>
+                Please reach out to Rabin to fix this blunder:
+              </Shake>
+
               <IconsDiv>
                 <a href="mailto:rabinsunar182@gmail.com" target="_blank">
                   <EmailIcon className="iconsCss" />
@@ -75,6 +79,7 @@ const Box = styled.div`
     position: absolute;
     top: 40px;
     border-radius: 5px;
+    cursor: default;
 
     -webkit-box-shadow: 5px 5px 15px 5px #000000;
     box-shadow: 5px 5px 15px 5px #000000;
@@ -178,6 +183,7 @@ const Box = styled.div`
     width: 310px;
     font-size: 18px;
     font-family: "Source Code Pro", monospace;
+    cursor: default;
     /* background-color: black; */
   }
 `;
@@ -188,7 +194,7 @@ const IconsDiv = styled.div`
   width: 50%;
   margin: 0 auto;
   justify-content: space-around;
-  padding: 10px;
+
   color: white;
   a:link {
     color: white;
