@@ -22,10 +22,10 @@ function Main() {
       <div className="notBG">
         <Header />
         <div className="homeComponent">
-          {/* <Home /> */}
+          <Home />
           {/* <Project /> */}
           {/* <CareerTimeLine /> */}
-          <Contact />
+          {/* <Contact /> */}
         </div>
         <Footer />
       </div>

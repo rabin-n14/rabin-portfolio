@@ -57,8 +57,6 @@ export default Home;
 
 const Container = styled.div`
   color: white;
-  min-height: 75vh;
-  border-radius: 75px;
   display: flex;
   flex-direction: column;
   justify-content: center;
