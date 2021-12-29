@@ -137,6 +137,7 @@ const TimeLine = styled.div`
 
   .vertical-timeline-element-content {
     padding: 0.8em;
+    cursor: default;
   }
   .vertical-timeline-element-content .vertical-timeline-element-date {
     font-family: "Open Sans Condensed", sans-serif;

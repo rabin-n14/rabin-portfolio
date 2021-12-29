@@ -29,6 +29,9 @@ function Home() {
                   .pauseFor(3000)
                   .deleteAll()
                   .typeString(`Navigate through above menus to see my works.`)
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .typeString(`Or you can take a look at my below profiles:`)
                   .start();
               }}
             />

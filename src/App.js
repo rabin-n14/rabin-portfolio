@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Project from "./components/Project";
 import CareerTimeLine from "./components/CareerTimeLine";
 import Contact from "./components/Contact";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
@@ -20,13 +21,17 @@ function Main() {
   return (
     <>
       <div className="notBG">
-        <Header />
-        <div className="homeComponent">
-          <Home />
-          {/* <Project /> */}
-          {/* <CareerTimeLine /> */}
-          {/* <Contact /> */}
-        </div>
+        <Router>
+          <Header />
+          <div className="homeComponent">
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route path="/project" element={<Project />} />
+              <Route path="/experience" element={<CareerTimeLine />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </div>
+        </Router>
         <Footer />
       </div>
     </>
