@@ -4,7 +4,7 @@ import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import IntegrationInstructionsOutlinedIcon from "@mui/icons-material/IntegrationInstructionsOutlined";
 import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
 import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -12,36 +12,36 @@ function Header() {
       <Nav>
         <NavMenu>
           <li className="menuList">
-            <Link to="/" className="menuLink">
+            <NavLink to="/" className="menuLink">
               <span className="icon">
                 <HomeOutlinedIcon fontSize="large" />
               </span>
               <span className="text">HOME</span>
-            </Link>
+            </NavLink>
           </li>
           <li className="menuList">
-            <Link to="/project" className="menuLink">
+            <NavLink to="/project" className="menuLink">
               <span className="icon">
                 <IntegrationInstructionsOutlinedIcon fontSize="large" />
               </span>
               <span className="text">PROJECTS</span>
-            </Link>
+            </NavLink>
           </li>
           <li className="menuList">
-            <Link to="/experience" className="menuLink">
+            <NavLink to="/experience" className="menuLink">
               <span className="icon">
                 <PsychologyOutlinedIcon fontSize="large" />
               </span>
               <span className="text">EXPERIENCE</span>
-            </Link>
+            </NavLink>
           </li>
           <li className="menuList">
-            <Link to="/contact" className="menuLink">
+            <NavLink to="/contact" className="menuLink">
               <span className="icon">
                 <CallOutlinedIcon fontSize="large" />
               </span>
               <span className="text">CONTACT</span>
-            </Link>
+            </NavLink>
           </li>
         </NavMenu>
       </Nav>
@@ -63,9 +63,37 @@ const NavMenu = styled.div`
   display: flex;
   flex-direction: row;
   width: 60%;
+
+  @media (max-width: 695px) {
+    width: 65%;
+  }
+  @media (max-width: 574px) {
+    width: 70%;
+  }
+  @media (max-width: 500px) {
+    width: 75%;
+  }
+  @media (max-width: 465px) {
+    width: 80%;
+  }
+  @media (max-width: 438px) {
+    width: 85%;
+  }
+  @media (max-width: 411px) {
+    width: 87%;
+  }
+  @media (max-width: 401px) {
+    width: 90%;
+  }
+  @media (max-width: 390px) {
+    width: 95%;
+  }
+  @media (max-width: 367px) {
+    width: 98%;
+    overflow-x: hidden;
+  }
   justify-content: space-around;
   position: relative;
-  /* border: 2px solid rgba(0, 0, 0, 0.5); */
   border-radius: 10px;
   /* background-color: green; */
   overflow-y: hidden;
@@ -109,6 +137,15 @@ const NavMenu = styled.div`
         font-family: "Moon Dance", cursive;
         font-weight: bold;
         font-size: 18px;
+        @media (max-width: 502px) {
+          font-size: 17px;
+        }
+        @media (max-width: 469px) {
+          font-size: 16px;
+        }
+        @media (max-width: 361px) {
+          font-size: 14px;
+        }
         letter-spacing: 2px;
         transition: 0.5s;
         opacity: 0;
