@@ -80,6 +80,9 @@ const Wrapper = styled.div`
   position: absolute;
   color: white;
   height: 70vh;
+  @media (max-width: 680px) {
+    height: 68vh;
+  }
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -90,6 +93,18 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   font-size: 20px;
+  @media (max-width: 680px) {
+    font-size: 18px;
+  }
+  @media (max-width: 460px) {
+    font-size: 17px;
+  }
+  @media (max-width: 383px) {
+    font-size: 16px;
+  }
+  @media (max-width: 280px) {
+    font-size: 12px;
+  }
   h1 {
     font-family: "Cinzel", serif;
   }
@@ -130,25 +145,82 @@ const TimeLine = styled.div`
 
   p {
     font-family: "Dosis", sans-serif;
-    font-size: 18px;
     font-weight: bold;
     letter-spacing: 1px;
+    font-size: 18px;
+    @media (max-width: 680px) {
+      font-size: 17px;
+    }
+    @media (max-width: 550px) {
+      margin: 0.5em 0 0;
+      line-height: 1.3;
+    }
+    @media (max-width: 425px) {
+      font-size: 15px;
+    }
+    @media (max-width: 383px) {
+      font-size: 14px;
+    }
+    @media (max-width: 345px) {
+      font-size: 13px;
+    }
   }
 
   .vertical-timeline-element-content {
     padding: 0.8em;
+    @media (max-width: 383px) {
+      padding: 0.5em;
+    }
     cursor: default;
   }
+
   .vertical-timeline-element-content .vertical-timeline-element-date {
     font-family: "Open Sans Condensed", sans-serif;
     letter-spacing: 2px;
-    font-size: 20px;
     font-weight: bold;
+    font-size: 20px;
+    @media (max-width: 1169px) {
+      color: black;
+      font-family: "Playfair Display", serif;
+      font-weight: bold;
+    }
+    @media (max-width: 680px) {
+      font-size: 18px;
+    }
+    @media (max-width: 550px) {
+      padding: 0.4em 0;
+    }
+    @media (max-width: 425px) {
+      font-size: 17px;
+    }
+    @media (max-width: 412px) {
+      font-size: 16px;
+    }
+    @media (max-width: 345px) {
+      font-size: 15px;
+    }
   }
+
   .vertical-timeline-element-title,
   .vertical-timeline-element-subtitle {
     font-family: "Open Sans Condensed", sans-serif;
     letter-spacing: 2px;
+    font-weight: bold;
+    @media (max-width: 680px) {
+      font-size: 19px;
+    }
+    @media (max-width: 425px) {
+      font-size: 16px;
+    }
+    @media (max-width: 412px) {
+      font-size: 14px;
+    }
+    @media (max-width: 361px) {
+      letter-spacing: 1px;
+    }
+    @media (max-width: 320px) {
+      font-size: 13px;
+    }
   }
 
   .cover_top {
@@ -156,7 +228,13 @@ const TimeLine = styled.div`
     width: 97%;
     position: fixed;
     left: 0;
-    top: 50px;
+    top: 45px;
+    @media (max-width: 375px) {
+      top: 41px;
+    }
+    @media (max-width: 280px) {
+      top: 30px;
+    }
     right: 0;
     height: 25px;
     background: -webkit-gradient(
@@ -172,7 +250,7 @@ const TimeLine = styled.div`
     width: 97%;
     position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: -2px;
     right: 0;
     height: 25px;
     background: -webkit-gradient(

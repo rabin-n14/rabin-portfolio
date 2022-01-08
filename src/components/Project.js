@@ -59,13 +59,16 @@ function Project() {
                 <Fade bottom duration={3000}>
                   <SlideDescription>
                     <CodeIcon fontSize="small" />
-                    &nbsp;Made with ReactJS & ReduxJS.
-                    <br />
-                    <CodeIcon fontSize="small" />
-                    &nbsp;Responsive.
+                    &nbsp;Built with ReactJS & ReduxJS.
                     <br />
                     <CodeIcon fontSize="small" />
                     &nbsp;Menu Button is clickable.
+                    <br />
+                    <CodeIcon fontSize="small" />
+                    &nbsp;Fully Responsive.
+                    <br />
+                    <CodeIcon fontSize="small" />
+                    &nbsp;Note: Hover the Preview on left.
                   </SlideDescription>
                 </Fade>
               </SlideImgDes>
@@ -105,19 +108,19 @@ function Project() {
                 <Fade bottom duration={3000}>
                   <SlideDescription>
                     <CodeIcon fontSize="small" />
-                    &nbsp;Made with ReactJS, ReduxJS & Firebase.
+                    &nbsp;Built with ReactJS, ReduxJS & Firebase.
                     <br />
                     <CodeIcon fontSize="small" />
-                    &nbsp;Responsive.
-                    <br />
-                    <CodeIcon fontSize="small" />
-                    &nbsp;Requires login with Gmail.
+                    &nbsp;Sign-in and out with Gmail.
                     <br />
                     <CodeIcon fontSize="small" />
                     &nbsp;Each Movies are clickable.
                     <br />
                     <CodeIcon fontSize="small" />
-                    &nbsp;Don't forget to SignOut.
+                    &nbsp;Fully Responsive.
+                    <br />
+                    <CodeIcon fontSize="small" />
+                    &nbsp;Note: Hover the Preview on left.
                   </SlideDescription>
                 </Fade>
               </SlideImgDes>
@@ -175,7 +178,17 @@ const DisneySlide = styled.div`
 const SlideHeading = styled.div`
   /* background-color: yellow; */
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
+  @media (max-width: 425px) {
+    margin-bottom: 20px;
+  }
+  @media (max-width: 375px) {
+    font-size: 15px;
+  }
+  @media (max-width: 320px) {
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
   padding: 5px;
   font-family: "Cinzel", serif;
 `;
@@ -183,20 +196,46 @@ const SlideHeading = styled.div`
 const SlideImgDes = styled.div`
   /* background-color: green; */
   padding-bottom: 60px;
-  width: 90%;
+  @media (max-width: 768px) {
+    padding-bottom: 50px;
+  }
+  @media (max-width: 460px) {
+    padding-bottom: 50px;
+  }
   margin: 0 auto;
   display: flex;
   flex-direction: row;
+  @media (max-width: 820px) {
+    height: 50vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  @media (max-width: 550px) {
+    height: 30vh;
+  }
+  @media (max-width: 425px) {
+    height: 50vh;
+  }
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 `;
 
 const SlideImage = styled.div`
-  height: 40vh;
+  /* height: 40vh; */
   /* background-color: red; */
   position: relative;
   display: inline-block;
+  width: 40%;
+  @media (max-width: 820px) {
+    width: 60%;
+  }
 
+  @media (max-width: 425px) {
+    width: 70%;
+  }
+  @media (max-width: 320px) {
+    width: 80%;
+  }
   video {
     width: 100%;
     height: 100%;
@@ -255,6 +294,21 @@ const FadedBox = styled.div`
     transition-duration: 0.25s;
     font-family: "Shalimar", cursive;
     font-size: 30px;
+    @media (max-width: 768px) {
+      font-size: 25px;
+    }
+    @media (max-width: 620px) {
+      font-size: 21px;
+    }
+    @media (max-width: 460px) {
+      font-size: 18px;
+    }
+    @media (max-width: 425px) {
+      font-size: 20px;
+    }
+    @media (max-width: 320px) {
+      font-size: 18px;
+    }
     &:hover {
       transition-duration: 0.25s;
       transform: scale(1.25);
@@ -270,5 +324,23 @@ const SlideDescription = styled.div`
   /* background-color: orange; */
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 25px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+  @media (max-width: 620px) {
+    font-size: 17px;
+  }
+  @media (max-width: 589px) {
+    font-size: 15px;
+  }
+  @media (max-width: 425px) {
+    font-size: 18px;
+  }
+  @media (max-width: 375px) {
+    font-size: 15px;
+  }
+  @media (max-width: 320px) {
+    font-size: 13px;
+  }
   letter-spacing: 2px;
 `;
