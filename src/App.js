@@ -29,6 +29,7 @@ function Main() {
               <Route path="/project" element={<Project />} />
               <Route path="/experience" element={<CareerTimeLine />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/*" element={<Contact />} />
             </Routes>
           </div>
         </Router>

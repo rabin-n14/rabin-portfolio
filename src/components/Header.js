@@ -67,6 +67,9 @@ const NavMenu = styled.div`
   @media (max-width: 695px) {
     width: 65%;
   }
+  @media (max-width: 634px) {
+    width: 67%;
+  }
   @media (max-width: 605px) {
     width: 68%;
   }
@@ -78,6 +81,9 @@ const NavMenu = styled.div`
   }
   @media (max-width: 500px) {
     width: 75%;
+  }
+  @media (max-width: 786px) {
+    width: 78%;
   }
   @media (max-width: 465px) {
     width: 80%;
@@ -143,17 +149,20 @@ const NavMenu = styled.div`
         font-family: "Moon Dance", cursive;
         font-weight: bold;
         font-size: 18px;
-        @media (max-width: 632px) {
+        @media (max-width: 633px) {
           font-size: 17px;
         }
         @media (max-width: 603px) {
           font-size: 16px;
         }
-        @media (max-width: 509px) {
+        @media (max-width: 514px) {
           font-size: 15px;
         }
         @media (max-width: 469px) {
           font-size: 14px;
+        }
+        @media (max-width: 280px) {
+          font-size: 11px;
         }
 
         letter-spacing: 2px;
