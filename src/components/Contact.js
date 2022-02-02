@@ -116,7 +116,7 @@ const Box = styled.div`
     -o-animation: moving 5s linear infinite;
 
     transform-origin: 50% -400%;
-    -webkittransform-origin: 50% -400%;
+    -webkit-transform-origin: 50% -400%;
     -moz-transform-origin: 50% -400%;
     -o-transform-origin: 50% -400%;
 

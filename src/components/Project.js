@@ -128,7 +128,7 @@ function Project() {
 
             <UberEatsSlide>
               <UberHeading>
-                <h1>Uber Eats Clone</h1>
+                <h1>UberEats Clone</h1>
               </UberHeading>
               <UberSlideImgDes>
                 <SlideUberImage>
@@ -158,7 +158,7 @@ function Project() {
                   </UberFadedBox>
                 </SlideUberImage>
                 <Fade bottom duration={3000}>
-                  <SlideDescription>
+                  <UberDescription>
                     <CodeIcon fontSize="small" />
                     &nbsp;Built with React-Native, ReduxJS, Firebase & YelpAPI.
                     <br />
@@ -173,7 +173,7 @@ function Project() {
                     <br />
                     <CodeIcon fontSize="small" />
                     &nbsp;Note: Hover the Preview.
-                  </SlideDescription>
+                  </UberDescription>
                 </Fade>
               </UberSlideImgDes>
             </UberEatsSlide>
@@ -255,14 +255,10 @@ const UberHeading = styled.div`
   /* background-color: yellow; */
   text-align: center;
 
-  @media (max-width: 425px) {
-    margin-bottom: 20px;
-  }
   @media (max-width: 375px) {
     font-size: 15px;
   }
   @media (max-width: 320px) {
-    margin-bottom: 5px;
     font-size: 13px;
   }
   padding: 5px;
@@ -287,7 +283,7 @@ const SlideImgDes = styled.div`
     justify-content: space-evenly;
   }
   @media (max-width: 550px) {
-    height: 30vh;
+    height: 40vh;
   }
   @media (max-width: 425px) {
     height: 50vh;
@@ -299,28 +295,20 @@ const SlideImgDes = styled.div`
 const UberSlideImgDes = styled.div`
   /* background-color: green; */
 
-  @media (max-width: 768px) {
-    padding-bottom: 50px;
-  }
-  @media (max-width: 460px) {
-    padding-bottom: 50px;
-  }
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  @media (max-width: 820px) {
+  justify-content: space-around;
+
+  @media (max-width: 578px) {
     height: 50vh;
     flex-direction: column;
-    justify-content: space-evenly;
   }
-  @media (max-width: 550px) {
-    height: 30vh;
-  }
-  @media (max-width: 425px) {
+
+  @media (max-width: 424px) {
     height: 50vh;
   }
   align-items: center;
-  justify-content: space-around;
 `;
 
 const SlideImage = styled.div`
@@ -354,16 +342,23 @@ const SlideUberImage = styled.div`
   position: relative;
   display: inline-block;
   width: 16%;
-  @media (max-width: 820px) {
-    width: 60%;
+  @media (max-width: 910px) {
+    height: 70vh;
+    width: 20%;
   }
-
-  @media (max-width: 425px) {
-    width: 70%;
+  @media (max-width: 820px) {
+    height: 60vh;
+  }
+  @media (max-width: 578px) {
+    height: 40vh;
+  }
+  @media (max-width: 550px) {
+    height: 30vh;
   }
   @media (max-width: 320px) {
-    width: 80%;
+    height: 40vh;
   }
+
   video {
     width: 100%;
     height: 100%;
@@ -454,7 +449,7 @@ const FadedBox = styled.div`
 const UberFadedBox = styled.div`
   position: absolute;
   width: 100%;
-  height: 65vh;
+  height: 100%;
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.6);
@@ -533,6 +528,7 @@ const SlideDescription = styled.div`
   /* background-color: orange; */
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 25px;
+  letter-spacing: 2px;
   @media (max-width: 768px) {
     font-size: 20px;
   }
@@ -551,5 +547,35 @@ const SlideDescription = styled.div`
   @media (max-width: 320px) {
     font-size: 13px;
   }
+`;
+
+const UberDescription = styled.div`
+  /* background-color: orange; */
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 25px;
   letter-spacing: 2px;
+  @media (max-width: 910px) {
+    font-size: 20px;
+  }
+  @media (max-width: 820px) {
+    font-size: 17px;
+  }
+  @media (max-width: 605px) {
+    font-size: 12px;
+  }
+  @media (max-width: 678px) {
+    font-size: 17px;
+  }
+  @media (max-width: 462px) {
+    font-size: 15px;
+  }
+  @media (max-width: 424px) {
+    font-size: 14px;
+  }
+  @media (max-width: 475px) {
+    font-size: 12px;
+  }
+  @media (max-width: 320px) {
+    font-size: 10px;
+  }
 `;
