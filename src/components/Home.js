@@ -205,6 +205,9 @@ const IconsDiv = styled.div`
   justify-content: space-around;
   padding: 10px;
   color: white;
+  a:link {
+    color: white;
+  }
   a:visited {
     color: white;
   }
