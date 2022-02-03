@@ -4,7 +4,12 @@ import styled from "styled-components";
 function Header() {
   return (
     <>
-      <Container>Rights Reserved • Rabin Sunar • 2021 •</Container>
+      <Container>
+        <a href="https://github.com/rabin-n14/rabin-portfolio" target="_blank">
+          View Source
+        </a>
+        &nbsp; • Rabin Sunar • 2021 •
+      </Container>
     </>
   );
 }
@@ -22,4 +27,14 @@ const Container = styled.div`
     font-size: 8px;
   }
   letter-spacing: 3px;
+
+  a:link {
+    text-decoration: underline;
+    color: white;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: white;
+  }
 `;
