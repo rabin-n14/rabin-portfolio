@@ -5,54 +5,57 @@ import Fade from "react-reveal/Fade";
 import Typewriter from "typewriter-effect";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import AnimatedPage from "./AnimatedPage";
 
 function Home() {
   return (
-    <Container>
-      <Wrapper>
-        <NameDiv>
-          <Spin>
-            <h1>Rabin Sunar</h1>
-          </Spin>
-        </NameDiv>
+    <AnimatedPage>
+      <Container>
+        <Wrapper>
+          <NameDiv>
+            <Spin>
+              <h1>Rabin Sunar</h1>
+            </Spin>
+          </NameDiv>
 
-        <ProfDiv>
-          <h3>
-            <Typewriter
-              onInit={(typewriter) => {
-                typewriter
-                  .pauseFor(1000)
-                  .typeString(`<>Front-End Web Development</>`)
-                  .pauseFor(500)
-                  .deleteChars(8)
-                  .typeString(`per</>`)
-                  .pauseFor(3000)
-                  .deleteAll()
-                  .typeString(`Navigate through above menus to see my works.`)
-                  .pauseFor(2000)
-                  .deleteAll()
-                  .typeString(`Or you can take a look at my below profiles:`)
-                  .start();
-              }}
-            />
-          </h3>
-        </ProfDiv>
+          <ProfDiv>
+            <h3>
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter
+                    .pauseFor(1000)
+                    .typeString(`<>Front-End Web Development</>`)
+                    .pauseFor(500)
+                    .deleteChars(8)
+                    .typeString(`per</>`)
+                    .pauseFor(3000)
+                    .deleteAll()
+                    .typeString(`Navigate through above menus to see my works.`)
+                    .pauseFor(2000)
+                    .deleteAll()
+                    .typeString(`Or you can take a look at my below profiles:`)
+                    .start();
+                }}
+              />
+            </h3>
+          </ProfDiv>
 
-        <Fade top>
-          <IconsDiv>
-            <a
-              href="https://www.linkedin.com/in/rabin-sunar-0398b71a5/"
-              target="_blank"
-            >
-              <LinkedInIcon className="iconsCss" />
-            </a>
-            <a href="https://github.com/rabin-n14" target="_blank">
-              <GitHubIcon className="iconsCss" />
-            </a>
-          </IconsDiv>
-        </Fade>
-      </Wrapper>
-    </Container>
+          <Fade top>
+            <IconsDiv>
+              <a
+                href="https://www.linkedin.com/in/rabin-sunar-0398b71a5/"
+                target="_blank"
+              >
+                <LinkedInIcon className="iconsCss" />
+              </a>
+              <a href="https://github.com/rabin-n14" target="_blank">
+                <GitHubIcon className="iconsCss" />
+              </a>
+            </IconsDiv>
+          </Fade>
+        </Wrapper>
+      </Container>
+    </AnimatedPage>
   );
 }
 

@@ -3,34 +3,37 @@ import styled from "styled-components";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Shake from "react-reveal/Shake";
+import AnimatedPage from "./AnimatedPage";
 
 function Contact() {
   return (
     <>
-      <Container>
-        <Wrapper>
-          <Box>
-            <div className="box">Error!</div>
-            <p>
-              <Shake delay={1500}>
-                Please reach out to Rabin to fix this blunder:
-              </Shake>
+      <AnimatedPage>
+        <Container>
+          <Wrapper>
+            <Box>
+              <div className="box">Error!</div>
+              <p>
+                <Shake delay={1500}>
+                  Please reach out to Rabin to fix this blunder:
+                </Shake>
 
-              <IconsDiv>
-                <a href="mailto:rabinsunar182@gmail.com" target="_blank">
-                  <EmailIcon className="iconsCss" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/rabin-sunar-0398b71a5/"
-                  target="_blank"
-                >
-                  <LinkedInIcon className="iconsCss" />
-                </a>
-              </IconsDiv>
-            </p>
-          </Box>
-        </Wrapper>
-      </Container>
+                <IconsDiv>
+                  <a href="mailto:rabinsunar182@gmail.com" target="_blank">
+                    <EmailIcon className="iconsCss" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/rabin-sunar-0398b71a5/"
+                    target="_blank"
+                  >
+                    <LinkedInIcon className="iconsCss" />
+                  </a>
+                </IconsDiv>
+              </p>
+            </Box>
+          </Wrapper>
+        </Container>
+      </AnimatedPage>
     </>
   );
 }

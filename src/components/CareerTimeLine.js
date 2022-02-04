@@ -9,50 +9,56 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import Zoom from "react-reveal/Zoom";
+import AnimatedPage from "./AnimatedPage";
 
 function CareerTimeLine() {
   let workIconStyles = { background: "#06D6A0" };
   let schoolIconStyles = { background: "#f9c74f" };
   return (
-    <Container>
-      <Wrapper>
-        <Zoom top>
-          <h1>Career Timeline</h1>
-        </Zoom>
+    <AnimatedPage>
+      <Container>
+        <Wrapper>
+          <Zoom top>
+            <h1>Career Timeline</h1>
+          </Zoom>
 
-        <TimeLine>
-          <VerticalTimeline>
-            {timelineElements.map((element) => {
-              let isWorkIcon = element.icon === "work";
-              return (
-                <VerticalTimelineElement
-                  key={element.key}
-                  date={element.date}
-                  dateClassName="date"
-                  iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
-                  icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
-                >
-                  <h3 className="vertical-timeline-element-title" id="fontDark">
-                    {element.title}
-                  </h3>
-                  <h5
-                    className="vertical-timeline-element-subtitle"
-                    id="fontDark"
+          <TimeLine>
+            <VerticalTimeline>
+              {timelineElements.map((element) => {
+                let isWorkIcon = element.icon === "work";
+                return (
+                  <VerticalTimelineElement
+                    key={element.key}
+                    date={element.date}
+                    dateClassName="date"
+                    iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
+                    icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
                   >
-                    {element.org}
-                  </h5>
-                  <p id="description" id="fontDark">
-                    {element.description}
-                  </p>
-                </VerticalTimelineElement>
-              );
-            })}
-          </VerticalTimeline>
-          <div class="cover_top"></div>
-          <div class="cover_bottom"></div>
-        </TimeLine>
-      </Wrapper>
-    </Container>
+                    <h3
+                      className="vertical-timeline-element-title"
+                      id="fontDark"
+                    >
+                      {element.title}
+                    </h3>
+                    <h5
+                      className="vertical-timeline-element-subtitle"
+                      id="fontDark"
+                    >
+                      {element.org}
+                    </h5>
+                    <p id="description" id="fontDark">
+                      {element.description}
+                    </p>
+                  </VerticalTimelineElement>
+                );
+              })}
+            </VerticalTimeline>
+            <div class="cover_top"></div>
+            <div class="cover_bottom"></div>
+          </TimeLine>
+        </Wrapper>
+      </Container>
+    </AnimatedPage>
   );
 }
 

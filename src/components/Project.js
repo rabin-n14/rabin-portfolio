@@ -7,6 +7,7 @@ import CodeIcon from "@mui/icons-material/Code";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Fade from "react-reveal/Fade";
+import AnimatedPage from "./AnimatedPage";
 
 function Project() {
   let settings = {
@@ -22,164 +23,167 @@ function Project() {
 
   return (
     <>
-      <Container>
-        <ProjectsFlex>
-          <Carousel {...settings}>
-            <TeslaSlide>
-              <SlideHeading>
-                <h1>Tesla Clone</h1>
-              </SlideHeading>
-              <SlideImgDes>
-                <SlideImage>
-                  <video autoPlay loop playsInLine muted>
-                    <source src="/videos/tesla_vid.mp4" type="video/mp4" />
-                  </video>
-                  <FadedBox>
-                    <a
-                      href="https://rabin-tesla-clone-2021.netlify.app/"
-                      target="_blank"
-                    >
-                      <div className="boxSides">
-                        View Project
-                        <VisibilityIcon />
-                      </div>
-                    </a>
-                    <div className="vrLine"></div>
-                    <a
-                      href="https://github.com/rabin-n14/tesla-clone-app"
-                      target="_blank"
-                    >
-                      <div className="boxSides">
-                        Source Code
-                        <GitHubIcon />
-                      </div>
-                    </a>
-                  </FadedBox>
-                </SlideImage>
-                <Fade bottom duration={3000}>
-                  <SlideDescription>
-                    <CodeIcon fontSize="small" />
-                    &nbsp;Built with ReactJS & ReduxJS.
-                    <br />
-                    <CodeIcon fontSize="small" />
-                    &nbsp;Menu Button is clickable.
-                    <br />
-                    <CodeIcon fontSize="small" />
-                    &nbsp;Fully Responsive.
-                    <br />
-                    <CodeIcon fontSize="small" />
-                    &nbsp;Note: Hover the Preview.
-                  </SlideDescription>
-                </Fade>
-              </SlideImgDes>
-            </TeslaSlide>
+      <AnimatedPage>
+        <Container>
+          <ProjectsFlex>
+            <Carousel {...settings}>
+              <TeslaSlide>
+                <SlideHeading>
+                  <h1>Tesla Clone</h1>
+                </SlideHeading>
+                <SlideImgDes>
+                  <SlideImage>
+                    <video autoPlay loop playsInLine muted>
+                      <source src="/videos/tesla_vid.mp4" type="video/mp4" />
+                    </video>
+                    <FadedBox>
+                      <a
+                        href="https://rabin-tesla-clone-2021.netlify.app/"
+                        target="_blank"
+                      >
+                        <div className="boxSides">
+                          View Project
+                          <VisibilityIcon />
+                        </div>
+                      </a>
+                      <div className="vrLine"></div>
+                      <a
+                        href="https://github.com/rabin-n14/tesla-clone-app"
+                        target="_blank"
+                      >
+                        <div className="boxSides">
+                          Source Code
+                          <GitHubIcon />
+                        </div>
+                      </a>
+                    </FadedBox>
+                  </SlideImage>
+                  <Fade bottom duration={3000}>
+                    <SlideDescription>
+                      <CodeIcon fontSize="small" />
+                      &nbsp;Built with ReactJS & ReduxJS.
+                      <br />
+                      <CodeIcon fontSize="small" />
+                      &nbsp;Menu Button is clickable.
+                      <br />
+                      <CodeIcon fontSize="small" />
+                      &nbsp;Fully Responsive.
+                      <br />
+                      <CodeIcon fontSize="small" />
+                      &nbsp;Note: Hover the Preview.
+                    </SlideDescription>
+                  </Fade>
+                </SlideImgDes>
+              </TeslaSlide>
 
-            <DisneySlide>
-              <SlideHeading>
-                <h1>Disney Clone</h1>
-              </SlideHeading>
-              <SlideImgDes>
-                <SlideImage>
-                  <video autoPlay loop playsInLine muted>
-                    <source src="/videos/disney_vid.mp4" type="video/mp4" />
-                  </video>
-                  <FadedBox>
-                    <a
-                      href="https://disneyplus-clone-rabin.firebaseapp.com"
-                      target="_blank"
-                    >
-                      <div className="boxSides">
-                        View Project
-                        <VisibilityIcon />
-                      </div>
-                    </a>
-                    <div className="vrLine"></div>
-                    <a
-                      href="https://github.com/rabin-n14/disney-clone"
-                      target="_blank"
-                    >
-                      <div className="boxSides">
-                        Source Code
-                        <GitHubIcon />
-                      </div>
-                    </a>
-                  </FadedBox>
-                </SlideImage>
-                <Fade bottom duration={3000}>
-                  <SlideDescription>
-                    <CodeIcon fontSize="small" />
-                    &nbsp;Built with ReactJS, ReduxJS & Firebase.
-                    <br />
-                    <CodeIcon fontSize="small" />
-                    &nbsp;Sign-in and out with Gmail.
-                    <br />
-                    <CodeIcon fontSize="small" />
-                    &nbsp;Each Movies are clickable.
-                    <br />
-                    <CodeIcon fontSize="small" />
-                    &nbsp;Fully Responsive.
-                    <br />
-                    <CodeIcon fontSize="small" />
-                    &nbsp;Note: Hover the Preview.
-                  </SlideDescription>
-                </Fade>
-              </SlideImgDes>
-            </DisneySlide>
+              <DisneySlide>
+                <SlideHeading>
+                  <h1>Disney Clone</h1>
+                </SlideHeading>
+                <SlideImgDes>
+                  <SlideImage>
+                    <video autoPlay loop playsInLine muted>
+                      <source src="/videos/disney_vid.mp4" type="video/mp4" />
+                    </video>
+                    <FadedBox>
+                      <a
+                        href="https://disneyplus-clone-rabin.firebaseapp.com"
+                        target="_blank"
+                      >
+                        <div className="boxSides">
+                          View Project
+                          <VisibilityIcon />
+                        </div>
+                      </a>
+                      <div className="vrLine"></div>
+                      <a
+                        href="https://github.com/rabin-n14/disney-clone"
+                        target="_blank"
+                      >
+                        <div className="boxSides">
+                          Source Code
+                          <GitHubIcon />
+                        </div>
+                      </a>
+                    </FadedBox>
+                  </SlideImage>
+                  <Fade bottom duration={3000}>
+                    <SlideDescription>
+                      <CodeIcon fontSize="small" />
+                      &nbsp;Built with ReactJS, ReduxJS & Firebase.
+                      <br />
+                      <CodeIcon fontSize="small" />
+                      &nbsp;Sign-in and out with Gmail.
+                      <br />
+                      <CodeIcon fontSize="small" />
+                      &nbsp;Each Movies are clickable.
+                      <br />
+                      <CodeIcon fontSize="small" />
+                      &nbsp;Fully Responsive.
+                      <br />
+                      <CodeIcon fontSize="small" />
+                      &nbsp;Note: Hover the Preview.
+                    </SlideDescription>
+                  </Fade>
+                </SlideImgDes>
+              </DisneySlide>
 
-            <UberEatsSlide>
-              <UberHeading>
-                <h1>UberEats Clone</h1>
-              </UberHeading>
-              <UberSlideImgDes>
-                <SlideUberImage>
-                  <video autoPlay loop playsInLine muted>
-                    <source src="/videos/ubereats_vid.mp4" type="video/mp4" />
-                  </video>
-                  <UberFadedBox>
-                    <a
-                      href="https://expo.dev/@portfolios/rabin-ubereats-clone"
-                      target="_blank"
-                    >
-                      <div className="boxSides">
-                        View Project
-                        <VisibilityIcon />
-                      </div>
-                    </a>
-                    <div className="hrLine"></div>
-                    <a
-                      href="https://github.com/rabin-n14/ubereats-clone"
-                      target="_blank"
-                    >
-                      <div className="boxSides">
-                        Source Code
-                        <GitHubIcon />
-                      </div>
-                    </a>
-                  </UberFadedBox>
-                </SlideUberImage>
-                <Fade bottom duration={3000}>
-                  <UberDescription>
-                    <CodeIcon fontSize="small" />
-                    &nbsp;Built with React-Native, ReduxJS, Firebase & YelpAPI.
-                    <br />
-                    <CodeIcon fontSize="small" />
-                    &nbsp;Google Location API.
-                    <br />
-                    <CodeIcon fontSize="small" />
-                    &nbsp;Returns all restaurants over USA.
-                    <br />
-                    <CodeIcon fontSize="small" />
-                    &nbsp;Runs Dynamically.
-                    <br />
-                    <CodeIcon fontSize="small" />
-                    &nbsp;Note: Hover the Preview.
-                  </UberDescription>
-                </Fade>
-              </UberSlideImgDes>
-            </UberEatsSlide>
-          </Carousel>
-        </ProjectsFlex>
-      </Container>
+              <UberEatsSlide>
+                <UberHeading>
+                  <h1>UberEats Clone</h1>
+                </UberHeading>
+                <UberSlideImgDes>
+                  <SlideUberImage>
+                    <video autoPlay loop playsInLine muted>
+                      <source src="/videos/ubereats_vid.mp4" type="video/mp4" />
+                    </video>
+                    <UberFadedBox>
+                      <a
+                        href="https://expo.dev/@portfolios/rabin-ubereats-clone"
+                        target="_blank"
+                      >
+                        <div className="boxSides">
+                          View Project
+                          <VisibilityIcon />
+                        </div>
+                      </a>
+                      <div className="hrLine"></div>
+                      <a
+                        href="https://github.com/rabin-n14/ubereats-clone"
+                        target="_blank"
+                      >
+                        <div className="boxSides">
+                          Source Code
+                          <GitHubIcon />
+                        </div>
+                      </a>
+                    </UberFadedBox>
+                  </SlideUberImage>
+                  <Fade bottom duration={3000}>
+                    <UberDescription>
+                      <CodeIcon fontSize="small" />
+                      &nbsp;Built with React-Native, ReduxJS, Firebase &
+                      YelpAPI.
+                      <br />
+                      <CodeIcon fontSize="small" />
+                      &nbsp;Google Location API.
+                      <br />
+                      <CodeIcon fontSize="small" />
+                      &nbsp;Returns all restaurants over USA.
+                      <br />
+                      <CodeIcon fontSize="small" />
+                      &nbsp;Runs Dynamically.
+                      <br />
+                      <CodeIcon fontSize="small" />
+                      &nbsp;Note: Hover the Preview.
+                    </UberDescription>
+                  </Fade>
+                </UberSlideImgDes>
+              </UberEatsSlide>
+            </Carousel>
+          </ProjectsFlex>
+        </Container>
+      </AnimatedPage>
     </>
   );
 }
