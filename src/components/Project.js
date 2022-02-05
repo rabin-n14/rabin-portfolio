@@ -33,9 +33,20 @@ function Project() {
                 </SlideHeading>
                 <SlideImgDes>
                   <SlideImage>
-                    <video autoPlay loop playsInLine muted>
-                      <source src="/videos/tesla_vid.mp4" type="video/mp4" />
-                    </video>
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: `
+                        <video
+                          loop
+                          muted
+                          autoplay
+                          playsinline
+                          src="/videos/tesla_vid.mp4"
+                          type="video/mp4"
+                        />,
+                      `,
+                      }}
+                    ></div>
                     <FadedBox>
                       <a
                         href="https://rabin-tesla-clone-2021.netlify.app/"
@@ -82,9 +93,20 @@ function Project() {
                 </SlideHeading>
                 <SlideImgDes>
                   <SlideImage>
-                    <video autoPlay loop playsInLine muted>
-                      <source src="/videos/disney_vid.mp4" type="video/mp4" />
-                    </video>
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: `
+                        <video
+                          loop
+                          muted
+                          autoplay
+                          playsinline
+                          src="/videos/disney_vid.mp4"
+                          type="video/mp4"
+                        />,
+                      `,
+                      }}
+                    ></div>
                     <FadedBox>
                       <a
                         href="https://disneyplus-clone-rabin.firebaseapp.com"
@@ -134,9 +156,20 @@ function Project() {
                 </UberHeading>
                 <UberSlideImgDes>
                   <SlideUberImage>
-                    <video autoPlay loop playsInLine muted>
-                      <source src="/videos/ubereats_vid.mp4" type="video/mp4" />
-                    </video>
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: `
+                        <video
+                          loop
+                          muted
+                          autoplay
+                          playsinline
+                          src="/videos/ubereats_vid.mp4"
+                          type="video/mp4"
+                        />,
+                      `,
+                      }}
+                    ></div>
                     <UberFadedBox>
                       <a
                         href="https://expo.dev/@portfolios/rabin-ubereats-clone"
@@ -335,6 +368,7 @@ const SlideImage = styled.div`
     width: 100%;
     height: 100%;
     object-fit: contain;
+
     opacity: 1;
     transition-duration: 0.5s;
   }
