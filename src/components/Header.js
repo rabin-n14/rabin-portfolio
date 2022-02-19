@@ -146,7 +146,7 @@ const NavMenu = styled.div`
 
       .text {
         position: absolute;
-        font-family: "Moon Dance", cursive;
+        font-family: "Libre Baskerville", serif;
         font-weight: bold;
         font-size: 18px;
         @media (max-width: 633px) {

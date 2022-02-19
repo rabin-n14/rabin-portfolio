@@ -285,7 +285,9 @@ const SlideHeading = styled.div`
     font-size: 13px;
   }
   padding: 5px;
-  font-family: "Cinzel", serif;
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 `;
 
 const UberHeading = styled.div`
@@ -299,7 +301,9 @@ const UberHeading = styled.div`
     font-size: 13px;
   }
   padding: 5px;
-  font-family: "Cinzel", serif;
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 `;
 
 const SlideImgDes = styled.div`
